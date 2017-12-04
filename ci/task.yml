@@ -18,5 +18,4 @@ run:
   path: ./gradlew
   dir: demo-app
   args:
-  - clean
   - build
