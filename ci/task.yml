@@ -12,6 +12,7 @@ inputs:
 
 run:
   path: demo-app/gradlew
+  dir: demo-app
   args:
   - clean
   - build
