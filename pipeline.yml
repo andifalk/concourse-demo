@@ -9,5 +9,6 @@ jobs:
 - name: build-demo-app
   plan:
     - get: demo-app
+      trigger: true
     - task: build
       file: demo-app/ci/task.yml
