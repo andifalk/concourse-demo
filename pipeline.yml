@@ -2,7 +2,7 @@ resources:
 - name: demo-app
   type: git
   source:
-    uri: git@github.com:andifalk/concourse-demo.git
+    uri: https://github.com/andifalk/concourse-demo.git
     branch: master
 
 jobs:
