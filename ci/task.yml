@@ -11,7 +11,7 @@ inputs:
 - name: demo-app
 
 run:
-  path: demo-app/gradlew
+  path: ./gradlew
   dir: demo-app
   args:
   - clean
