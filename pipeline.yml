@@ -1,0 +1,13 @@
+resources:
+- name: demo-app
+  type: git
+  source:
+    uri: git@github.com:andifalk/concourse-demo.git
+    branch: master
+
+jobs:
+- name: build-demo-app
+  plan:
+    - get: demo-app
+    - task: build
+      file: demo-app/ci/task.yml

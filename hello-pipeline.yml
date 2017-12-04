@@ -1,0 +1,27 @@
+jobs:
+- name: hello-world
+  plan:
+  - task: say-hello
+    config:
+      platform: linux
+      image_resource:
+        type: docker-image
+        source: 
+          repository: alpine
+          tag: latest    
+      run:
+        path: echo
+        args:
+        - Hello
+  - task: say-world
+    config:
+      platform: linux
+      image_resource:
+        type: docker-image
+        source: 
+          repository: alpine
+          tag: latest    
+      run:
+        path: echo
+        args:
+        - World
