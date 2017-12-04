@@ -5,6 +5,16 @@ resources:
     uri: https://github.com/andifalk/concourse-demo.git
     branch: master
 
+- name: resource-deploy-web-app
+  type: cf
+  source:
+    api:  https://api.local.pcfdev.io
+    username: admin
+    password: admin
+    organization: pcfdev-org
+    space: pcfdev-space
+    skip_cert_check: true
+
 jobs:
 - name: build-demo-app
   plan:
@@ -12,11 +22,5 @@ jobs:
       trigger: true
     - task: build
       file: demo-app/ci/task.yml
-    - task: test
-      config:
-        platform: linux
-        run:
-          path: ls
-          dir: target-build
-          args:
-          - la   
+    
+        
