@@ -12,3 +12,11 @@ jobs:
       trigger: true
     - task: build
       file: demo-app/ci/task.yml
+    - task: test
+      config:
+        platform: linux
+        run:
+          path: ls
+          dir: target-build
+          args:
+          - la   
