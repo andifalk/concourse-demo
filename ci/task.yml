@@ -10,9 +10,11 @@ image_resource:
 inputs:
 - name: demo-app
 
+outputs:
+- name: build
+
 run:
   path: ./gradlew
   dir: demo-app
   args:
-  - clean
   - build

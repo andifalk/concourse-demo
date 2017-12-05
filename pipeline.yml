@@ -25,3 +25,4 @@ jobs:
     - put: resource-deploy-web-app
       params:
         manifest: demo-app/cf/manifest.yml
+        path: demo-app/build/libs
