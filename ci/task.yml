@@ -10,10 +10,6 @@ image_resource:
 inputs:
 - name: demo-app
 
-outputs:
-- name: target-build
-  path: build/libs
-
 run:
   path: ./gradlew
   dir: demo-app

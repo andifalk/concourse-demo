@@ -24,6 +24,4 @@ jobs:
       file: demo-app/ci/task.yml
     - put: resource-deploy-web-app
       params:
-        manifest: demo-app/cf/manifest.yml    
-    
-        
+        manifest: demo-app/cf/manifest.yml
