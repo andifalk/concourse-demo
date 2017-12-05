@@ -21,7 +21,7 @@ jobs:
     - get: demo-app
       trigger: true
     - task: build
-      file: demo-app/ci/build-task.yml
+      file: demo-app/ci/task.yml
     - put: resource-deploy-web-app
       params:
         manifest: demo-app/cf/manifest.yml    
