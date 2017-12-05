@@ -25,4 +25,4 @@ jobs:
     - put: resource-deploy-web-app
       params:
         manifest: demo-app/cf/manifest.yml
-        path: build/libs
+        path: build/libs/concourse-demo-1.0.0-SNAPSHOT.jar
