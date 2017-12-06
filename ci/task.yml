@@ -11,10 +11,7 @@ inputs:
 - name: demo-app
 
 outputs:
-- name: build
+- name: deploy-artifact
 
 run:
-  path: ./gradlew
-  dir: demo-app
-  args:
-  - build
+  path: demo-app/ci/build.sh
