@@ -1,7 +1,6 @@
 #!/bin/sh
 
-./gradlew clean build
+./gradlew clean assemble
 
-cp build/libs/* deploy-artifact
-cp libs/* deploy-artifact
+cp build/libs/* ../deploy-artifact
 
