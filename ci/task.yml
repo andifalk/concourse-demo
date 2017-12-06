@@ -14,5 +14,5 @@ outputs:
 - name: deploy-artifact
 
 run:
-  path: demo-app/ci/build.sh
+  path: ci/build.sh
   dir: demo-app
